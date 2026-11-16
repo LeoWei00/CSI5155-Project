@@ -1,0 +1,5 @@
+strategy,strategy_name,fc_lr,backbone_lr,selected_lr_trial,best_epoch,best_val_f1,accuracy,precision,recall,f1,trainable_params,total_params,training_seconds_all_lr_trials,training_seconds_selected_trial
+fc_only,FC only,0.0003,,2,11,0.8111,0.8097,0.7805,0.8618,0.8192,1026,11177538,748.9,541.5
+last_block,Layer 4 + FC,0.001,0.0001,1,15,0.9158,0.9122,0.8941,0.9352,0.9142,8394754,11177538,956.8,675.8
+last_2_blocks,Layers 3-4 + FC,0.001,0.0001,1,7,0.9251,0.9289,0.9303,0.9272,0.9288,10494466,11177538,1045.5,372.4
+full,Full fine-tuning,0.0003,3e-05,2,3,0.9191,0.9192,0.9010,0.9419,0.9210,11177538,11177538,710.3,259.9
